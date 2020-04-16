@@ -1,0 +1,52 @@
+body {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+  overflow: hidden;
+}
+.card {
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: 100px 210px 60px;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 16px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.card-image {
+  grid-area: image;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIxjnG5CjCzY2c_BUUktp2dhHHZar0B2fXUSY_WEuQEPIzqy3f&usqp=CAU");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+.card-stats {
